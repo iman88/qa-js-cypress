@@ -1,0 +1,35 @@
+{
+  "scripts": {
+    "cy:version": "cypress version",
+    "cy:info": "cypress info",
+    "cy:verify": "cypress verify",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "test:specs": "npx cypress run --spec **/*.spec.js",
+    "test:features": "cypress-tags run --spec **/*.features",
+    "test:feature": "cypress-tags run --spec */*.feature"
+  },
+  "devDependencies": {
+    "@types/cypress-cucumber-preprocessor": "^4.0.1",
+    "cucumber": "^6.0.7",
+    "cypress": "^9.0.0",
+    "cypress-cucumber-preprocessor": "^4.3.0",
+    "multiple-cucumber-html-reporter": "^1.20.0",
+    "resolve": "^1.20.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "./reports/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "dependencies": {
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cypress-mochawesome-reporter": "^3.0.1",
+    "cypress-plugin-retries": "^1.5.2",
+    "cypress-tags": "^0.3.0",
+    "tsify": "^5.0.4"
+  }
+}

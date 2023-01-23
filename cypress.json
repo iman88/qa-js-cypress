@@ -1,0 +1,17 @@
+{
+  "defaultCommandTimeout": 10000,
+  "viewportWidth": 1920,
+  "viewportHeight": 1080,
+
+  "reporter": "cypress-mochawesome-reporter",
+  "reporterOptions": {
+    "reportDir": "reports/mochawesome",
+    "reportPageTitle": "My Test Suite",
+    "json": true,
+    "html": true,
+    "charts": true,
+    "inlineAssets": true
+  },
+  "screenshotsFolder": "reports/screenshots",
+  "videosFolder": "reports/videos"
+}

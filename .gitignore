@@ -1,0 +1,6 @@
+/cypress/cucumber-json/
+/reports/
+/cypress/videos/
+/cypress/screenshots/
+/node_modules/
+/.idea/
